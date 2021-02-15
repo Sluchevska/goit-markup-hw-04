@@ -115,35 +115,26 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.auth-nav .email::before {
-  display: inline-block;
-  margin-right: 10px;
+.auth-nav .envelope {
   width: 16px;
   height: 12px;
-
-  content: "";
-  background-image: url(../icons/envelope.svg);
-  background-repeat: no-repeat;
+  margin-right: 10px;
+  fill: #757575;
 }
 
-.auth-nav .email:hover::before,
-.auth-nav .email:focus::before {
-  background-color: var(--accent-color);
+.auth-nav .envelope:hover {
+  fill: var(--accent-color);
+}
+
+.auth-nav .phone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
 
 .auth-nav .email:hover,
 .auth-nav .email:focus {
   color: var(--accent-color);
-}
-
-.auth-nav .phone::before {
-  display: inline-block;
-  margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  content: "";
-  background-image: url(../icons/smartphone.svg);
-  background-repeat: no-repeat;
 }
 
 /*Hero*/
