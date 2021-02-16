@@ -168,6 +168,7 @@ ul {
     url(../icons/main-bkg.jpg);
 
   background-color: #2f303a;
+
   /* max-width: 1600px; */
   background-repeat: no-repeat;
   background-position: center;
@@ -372,7 +373,8 @@ ul {
   height: 20px;
 }
 
-.soc-box:hover {
+.soc-box:hover,
+.soc-box:focus {
   display: flex;
   width: 44px;
   height: 44px;
@@ -427,7 +429,13 @@ ul {
 .logo3:hover,
 .logo4:hover,
 .logo5:hover,
-.logo6:hover {
+.logo6:hover,
+.logo1:focus,
+.logo2:focus,
+.logo3:focus,
+.logo4:focus,
+.logo5:focus,
+.logo6:focus {
   fill: var(--accent-color);
 }
 
@@ -502,7 +510,9 @@ ul {
   fill: var(--hero-color);
 }
 
-.join-socl a:hover {
+.join-socl a:hover,
+.join-socl a:active,
+.join-socl a:focus {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
 }
