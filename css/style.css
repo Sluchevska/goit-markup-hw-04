@@ -119,15 +119,8 @@ ul {
   width: 16px;
   height: 12px;
   margin-right: 10px;
+
   fill: #757575;
-}
-
-.auth-nav .envelope:hover {
-  fill: var(--accent-color);
-}
-
-.auth-nav .smartphone:hover {
-  fill: var(--accent-color);
 }
 
 .auth-nav .smartphone {
@@ -148,9 +141,19 @@ ul {
   color: var(--accent-color);
 }
 
+.auth-nav .email:hover .envelope,
+.auth-nav .email:focus .envelope {
+  fill: currentColor;
+}
+
 .auth-nav .phone:hover,
 .auth-nav .pnone:focus {
   color: var(--accent-color);
+}
+
+.auth-nav .phone:hover .smartphone,
+.auth-nav .pnone:focus .smartphone {
+  fill: currentColor;
 }
 
 /*Hero*/
@@ -169,7 +172,7 @@ ul {
 
   background-color: #2f303a;
 
-  /* max-width: 1600px; */
+  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -383,13 +386,14 @@ ul {
   background: var(--accent-color);
   justify-content: center;
   align-items: center;
+  color: var(--hero-color);
 }
 
-.insta:hover,
-.twit:hover,
-.face:hover,
-.linkd:hover {
-  fill: var(--hero-color);
+.soc-box:hover .twit,
+.soc-box:hover .insta,
+.soc-box:hover .face,
+.soc-box:hover .linkd {
+  fill: currentColor;
 }
 
 /*Clients logo*/
@@ -425,23 +429,17 @@ ul {
   fill: #afb1b8;
 }
 
-.logo1:hover,
-.logo2:hover,
-.logo3:hover,
-.logo4:hover,
-.logo5:hover,
-.logo6:hover,
-.logo1:focus,
-.logo2:focus,
-.logo3:focus,
-.logo4:focus,
-.logo5:focus,
-.logo6:focus {
-  fill: var(--accent-color);
-}
-
 .clients-box .item:hover {
   border: 1px solid var(--accent-color);
+}
+
+.clients-box .item:hover .logo1,
+.clients-box .item:hover .logo2,
+.clients-box .item:hover .logo3,
+.clients-box .item:hover .logo4,
+.clients-box .item:hover .logo5,
+.clients-box .item:hover .logo6 {
+  fill: var(--accent-color);
 }
 
 .clients-box .item:last-child {
@@ -502,7 +500,7 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   padding: 12px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .foot-media {
