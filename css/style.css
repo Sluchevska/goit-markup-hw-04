@@ -439,16 +439,23 @@ ul {
   fill: #afb1b8;
 }
 
-.clients-box .item:hover {
+.clients-box .item:hover,
+.clients-box .item:focus {
   border: 1px solid var(--accent-color);
 }
 
 .clients-box .item:hover .logo1,
+.clients-box .item:focus .logo1,
 .clients-box .item:hover .logo2,
+.clients-box .item:focus .logo2,
 .clients-box .item:hover .logo3,
+.clients-box .item:focus .logo3,
 .clients-box .item:hover .logo4,
+.clients-box .item:focus .logo4,
 .clients-box .item:hover .logo5,
-.clients-box .item:hover .logo6 {
+.clients-box .item:focus .logo5,
+.clients-box .item:hover .logo6,
+.clients-box .item:focus .logo6 {
   fill: var(--accent-color);
 }
 
