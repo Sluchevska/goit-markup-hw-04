@@ -400,9 +400,13 @@ ul {
 }
 
 .soc-box:hover .twit,
+.soc-box:focus .twit,
 .soc-box:hover .insta,
+.soc-box:focus .insta,
 .soc-box:hover .face,
-.soc-box:hover .linkd {
+.soc-box:focus .face,
+.soc-box:hover .linkd,
+.soc-box:focus .linkd {
   fill: currentColor;
 }
 
