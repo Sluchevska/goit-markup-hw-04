@@ -463,6 +463,21 @@ ul {
   fill: var(--accent-color);
 }
 
+.logo1:hover,
+.logo2:hover,
+.logo3:hover,
+.logo4:hover,
+.logo5:hover,
+.logo6:hover,
+.logo1:focus,
+.logo2:focus,
+.logo3:focus,
+.logo4:focus,
+.logo5:focus,
+.logo6:focus {
+  fill: var(--accent-color);
+}
+
 .clients-box .item:last-child {
   margin-right: 0;
 }
