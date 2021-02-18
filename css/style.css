@@ -152,7 +152,7 @@ ul {
 }
 
 .auth-nav .phone:hover,
-.auth-nav .pnone:focus {
+.auth-nav .phone:focus {
   color: var(--accent-color);
 }
 
