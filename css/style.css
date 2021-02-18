@@ -106,6 +106,11 @@ ul {
   color: var(--accent-color);
 }
 
+.site-nav .kont:hover,
+.site-nav .kont:focus {
+  color: var(--accent-color);
+}
+
 .auth-nav .link {
   color: var(--text-color);
   font-weight: 500;
@@ -377,15 +382,20 @@ ul {
   height: 20px;
 }
 
-.soc-box:hover,
-.soc-box:focus {
+.soc-box {
   display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: var(--accent-color);
+
   justify-content: center;
   align-items: center;
+}
+
+.soc-box:hover,
+.soc-box:focus {
+  background: var(--accent-color);
+
   color: var(--hero-color);
 }
 
@@ -556,6 +566,11 @@ ul {
   padding-left: 22px;
   padding-right: 22px;
   border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .btn-box .item:last-child {
@@ -566,11 +581,6 @@ ul {
 .portf-btn:focus {
   background-color: var(--accent-color);
   color: var(--hero-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /*Portfolio main*/
