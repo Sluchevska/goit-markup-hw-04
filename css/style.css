@@ -367,10 +367,18 @@ ul {
 .list-box {
   display: flex;
   padding-inline-start: 0;
-  justify-content: space-around;
 
+  justify-content: center;
   margin-top: 16px;
   margin-bottom: 30px;
+}
+
+.soclink-box {
+  margin-right: 10px;
+}
+
+.soclink-box:last-child {
+  margin-right: 0;
 }
 
 .insta,
@@ -423,15 +431,28 @@ ul {
 }
 
 .clients-box .item {
+  /* display: flex; */
+  /* margin-right: 30px;
+  margin-top: 50px;
+  height: 90px;
+  width: 170px; */
+  /* border: 1px solid #afb1b8;
+  border-radius: 4px; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.client-focus {
   display: flex;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   margin-right: 30px;
   margin-top: 50px;
   height: 90px;
   width: 170px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
   justify-content: center;
   align-items: center;
+  outline: none;
 }
 
 .logo1,
@@ -443,23 +464,23 @@ ul {
   fill: #afb1b8;
 }
 
-.clients-box .item:hover,
-.clients-box .item:focus {
+.client-focus:hover,
+.client-focus:focus {
   border: 1px solid var(--accent-color);
 }
 
-.clients-box .item:hover .logo1,
-.clients-box .item:focus .logo1,
-.clients-box .item:hover .logo2,
-.clients-box .item:focus .logo2,
-.clients-box .item:hover .logo3,
-.clients-box .item:focus .logo3,
-.clients-box .item:hover .logo4,
-.clients-box .item:focus .logo4,
-.clients-box .item:hover .logo5,
-.clients-box .item:focus .logo5,
-.clients-box .item:hover .logo6,
-.clients-box .item:focus .logo6 {
+.client-focus:hover .logo1,
+.client-focus:focus .logo1,
+.client-focus:hover .logo2,
+.client-focus:focus .logo2,
+.client-focus:hover .logo3,
+.client-focus:focus .logo3,
+.client-focus:hover .logo4,
+.client-focus:focus .logo4,
+.client-focus:hover .logo5,
+.client-focus:focus .logo5,
+.client-focus:hover .logo6,
+.client-focus:focus .logo6 {
   fill: var(--accent-color);
 }
 
@@ -478,7 +499,7 @@ ul {
   fill: var(--accent-color);
 }
 
-.clients-box .item:last-child {
+.client-focus .item:last-child {
   margin-right: 0;
 }
 
@@ -632,11 +653,6 @@ img {
   flex-basis: calc(100% / 3 - 30px);
 }
 
-.project-box .item:hover,
-.project-box .item:focus {
-  box-shadow: 0 0 10px var(--text-color);
-}
-
 .project-text {
   display: block;
   padding-top: 20px;
@@ -663,5 +679,12 @@ img {
 }
 
 .cards {
+  display: block;
   text-decoration: none;
+  outline: none;
+}
+
+.cards:hover,
+.cards:focus {
+  box-shadow: 0 0 10px var(--text-color);
 }
